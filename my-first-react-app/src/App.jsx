@@ -1,26 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
 
-const Card = ({title}) =>{
-    return(
-        <div className="card">
-            <h2>{title}</h2>
+const App = () => {
+    return (
+        <div>
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
         </div>
     )
 }
-
-
-
-const App = () =>{
-    return(
-        <div className="card-container">
-        <Card title="The Lion King" />
-            <Card title="Avengers"/>
-            <Card title="Spider-man"/>
-        </div>
-    )
-}
-
 export default App

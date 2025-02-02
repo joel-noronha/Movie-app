@@ -41,4 +41,19 @@ const App = () =>{
 }
 
 
+State
+->holds info about a component which can change over time.
+->state returns back to default when page is reloaded.
+->useState
+const [hasLiked,setHasLiked]=useState(false);   // setHasLiked function is used to update the state.
+<button onClick={()=> setHasLiked(!hasLiked)}>
+                {hasLiked? 'liked':'like'}
+</button>
+->useEffect handling data fetching
+->useContext sharing data across components
+->useCallback for optimizing callback functions
 
+useEffect
+useEffect(() => {
+        console.log(`${title} has been liked: ${hasLiked}`);
+    },[hasLiked]);
